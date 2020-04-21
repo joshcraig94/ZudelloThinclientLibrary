@@ -1,0 +1,10 @@
+﻿Scaffold-DbContext "DataSource=C:\Users\joshc\source\repos\Perspct\zudello-thinclient\ZudelloThinClient\SQLite\Database\Zudello.db;" Microsoft.EntityFrameworkCore.Sqlite -f
+
+Scaffold-DbContext "DataSource=C:\Users\joshc\source\repos\Perspct\zudello-thinclient\ZudelloThinClient\SQLite\Database\Zudello.db;" Microsoft.EntityFrameworkCore.Sqlite 
+Scaffold-DbContext "DataSource=C:\Zudello.db;" Microsoft.EntityFrameworkCore.Sqlite
+
+"C:\Program Files\Microsoft SQL Server\MSSQL14.ZUDELLODEV\MSSQL\Backup\LiveDatabase_2019.1\TestdataSql2008_2019.1.bak"
+string connection = @"DataSource=C:\Users\joshc\source\repos\Perspct\zudello-thinclient\ZudelloThinClient\SQLite\Database\Zudello.db";
+
+
+PM> Scaffold-DbContext "Server=.\LAPTOP-BUDQ9SBN\ZUDELLODEV;Database=Exo20191;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer

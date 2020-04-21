@@ -1,0 +1,74 @@
+<KFI_version=1.0><Object_ID=833><Speed=10>
+
+MOTOPART,87sSSL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,<F7><DOWN><F7><DOWN><F7><DOWN>
+<DOWN><F7><DOWN><F7><F9>
+ <UP>
+            <UP>   <UP>    <UP>            <UP>
+                              <UP>
+                                <UP>
+
+                                  ,,,0<F9>
+                                    ,,,5<F9>
+									<DOWN>
+									<DOWN>
+									<DOWN>
+									<DOWN>
+									<DOWN>
+									<DOWN>
+									<DOWN>
+									<DOWN>
+									<DOWN>
+                                      <F6>
+                                        <ESC>
+                                          <F9>
+
+
+
+										  
+Start of SQL 
+
+SELECT s.docnumpohdr, s.internaldocnum, s.status, s.row_number,
+
+CASE 
+	WHEN s.internaldocnum IN(193,194) then '<F7><DOWN>' 
+	WHEN  s.row_number = 1 and  s.internaldocnum NOT IN(193,194) then '<F7><DOWN>'
+	ELSE '<DOWN>'
+ END as 'SEQ'
+
+
+
+ from
+ (
+
+SELECT T1.docnumpohdr,T1.internaldocnum,T1.status,
+	         
+	            ( select count(*) 
+    from admin.purchaseorderheader T2
+    where T1.docnumpohdr >= T2.docnumpohdr
+    and T2.codepohdr = 'MOTOPART'
+	and T2.status in (8,0) ) as 'row_number'
+	         
+FROM
+	admin.purchaseorderheader T1
+
+where T1.codepohdr = 'MOTOPART'
+and T1.status in (8,0)
+order by T1.docnumpohdr 
+) AS s
+
+
+
+-- Reeipting Lines 
+
+
+SELECT ph.docnumpohdr,pd.internaldocnum,pd.linenum,pd.ROWID,
+    ( select count(*) 
+    FROM admin.purchaseorderdetail pd1	
+	where pd.ROWID >= pd1.ROWID
+	and pd1.internaldocnum in({po_number})
+	and pd1.qtyoutstanding > 0 ) as 'row_number'
+FROM admin.purchaseorderdetail pd
+join admin.purchaseorderheader ph on ph.internaldocnum = pd.internaldocnum
+where ph.internaldocnum in({po_number})
+and pd.qtyoutstanding > 0
+order by ph.docnumpohdr, pd.linenum

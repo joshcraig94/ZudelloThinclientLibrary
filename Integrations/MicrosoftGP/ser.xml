@@ -1,0 +1,56 @@
+﻿<data>
+  <row>
+    <object_type>Locations</object_type>
+    <connection_uuid>{{connection z.connection_id}}</connection_uuid>
+    <data.id>1</data.id>
+    <data.code>SYD</data.code>
+    <data.name>Sydney</data.name>
+    <data.adddress>,</data.adddress>
+    <data.subsidiary>0</data.subsidiary>
+  </row>
+  <row>
+    <object_type>Locations</object_type>
+    <connection_uuid>{{connection z.connection_id}}</connection_uuid>
+    <data.id>2</data.id>
+    <data.code>MEL</data.code>
+    <data.name>Melbourne</data.name>
+    <data.adddress>,</data.adddress>
+    <data.subsidiary>0</data.subsidiary>
+  </row>
+  <row>
+    <object_type>Locations</object_type>
+    <connection_uuid>{{connection z.connection_id}}</connection_uuid>
+    <data.id>3</data.id>
+    <data.code>BRIS</data.code>
+    <data.name>Brisbane</data.name>
+    <data.adddress>,</data.adddress>
+    <data.subsidiary>0</data.subsidiary>
+  </row>
+  <row>
+    <object_type>Locations</object_type>
+    <connection_uuid>{{connection z.connection_id}}</connection_uuid>
+    <data.id>4</data.id>
+    <data.code>AKLD</data.code>
+    <data.name>Auckland</data.name>
+    <data.adddress>,</data.adddress>
+    <data.subsidiary>0</data.subsidiary>
+  </row>
+  <row>
+    <object_type>Locations</object_type>
+    <connection_uuid>{{connection z.connection_id}}</connection_uuid>
+    <data.id>5</data.id>
+    <data.code>WIP</data.code>
+    <data.name>WIP</data.name>
+    <data.adddress>,</data.adddress>
+    <data.subsidiary>0</data.subsidiary>
+  </row>
+  <row>
+    <object_type>Locations</object_type>
+    <connection_uuid>{{connection z.connection_id}}</connection_uuid>
+    <data.id>6</data.id>
+    <data.code>TRN</data.code>
+    <data.name>TRANSIT</data.name>
+    <data.adddress>Transit,</data.adddress>
+    <data.subsidiary>0</data.subsidiary>
+  </row>
+</data>

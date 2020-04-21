@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<eConnect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PMTransactionType>
+    <eConnectProcessInfo xsi:nil="true" />
+    <taRequesterTrxDisabler_Items xsi:nil="true" />
+    <taUpdateCreateVendorRcd xsi:nil="true" />
+    <taCreateVendorAddress_Items xsi:nil="true" />
+    <taPMTransactionTaxInsert_Items xsi:nil="true" />
+    <taPMDistribution_Items>
+      <taPMDistribution>
+        <DOCTYPE>1</DOCTYPE>
+        <VCHRNMBR>{{z.document.invoiceNumber}}</VCHRNMBR>
+        <VENDORID>ABCP01</VENDORID>
+        <DISTTYPE>6</DISTTYPE>
+        <ACTINDX>38</ACTINDX>
+        <DEBITAMT>{{value z.document.subtotal}}</DEBITAMT>
+      </taPMDistribution>
+      <taPMDistribution>
+        <DOCTYPE>1</DOCTYPE>
+        <VCHRNMBR>{{z.document.invoiceNumber}}</VCHRNMBR>
+        <VENDORID>ABCP01</VENDORID>
+        <DISTTYPE>2</DISTTYPE>
+        <ACTINDX>33</ACTINDX>
+        <CRDTAMNT>{{value z.document.subtotal}}</CRDTAMNT>
+      </taPMDistribution>
+    </taPMDistribution_Items>
+    <taAnalyticsDistribution_Items xsi:nil="true" />
+    <taPMTransactionInsert>
+      <BACHNUMB>SAVE</BACHNUMB>
+      <VCHNUMWK>{{z.document.invoiceNumber}}</VCHNUMWK>
+      <VENDORID>ABCP01</VENDORID>
+      <DOCNUMBR>{{z.document.invoiceNumber}}</DOCNUMBR>
+      <DOCTYPE>1</DOCTYPE>
+      <DOCAMNT>{{value z.document.subtotal}}</DOCAMNT>
+      <DOCDATE>{{z.document.orderDate}}</DOCDATE>
+      <PRCHAMNT>{{value z.document.subtotal}}</PRCHAMNT>
+      <CHRGAMNT>{{value z.document.subtotal}}</CHRGAMNT>
+      <CREATEDIST>0</CREATEDIST>
+    </taPMTransactionInsert>
+    <taMdaUpdate_Items xsi:nil="true" />
+  </PMTransactionType>
+</eConnect>

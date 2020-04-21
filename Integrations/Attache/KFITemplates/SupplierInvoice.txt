@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?> 	
+<xmlkfi object_id='833'>
+	<record>
+		<header>
+			<suppliercode>{{normalize_length z.supplier.name Max:8 }}</suppliercode>
+			<sinvoicenumber>{{z.invoiceNumber}}</sinvoicenumber>
+			<deliveryaddresscode></deliveryaddresscode>
+			<deliveryaddressgln></deliveryaddressgln>
+			<deliveryname></deliveryname>
+			<deliveryaddressline2></deliveryaddressline2>
+			<deliverysuburb></deliverysuburb>
+			<deliverypostcode></deliverypostcode>
+			<deliverycountry></deliverycountry>
+			<supplierbusinessnumber></supplierbusinessnumber>
+			<suppliersubbusinessno></suppliersubbusinessno>
+			<defaulttaxcode></defaulttaxcode>
+			<formcode></formcode>
+			<printcopynow></printcopynow>
+			<sourcedoc></sourcedoc>
+			<deliverycontactname></deliverycontactname>
+			<deliverycontactphone></deliverycontactphone>
+			<deliverycontactfax></deliverycontactfax>
+			<glset></glset>
+			<date></date>
+			<followupdate></followupdate>
+			<deliverydate></deliverydate>
+			<comment></comment>
+			<reference></reference>
+			<discount></discount>
+			<currency></currency>
+			<exchangerate></exchangerate>
+			<termsindays></termsindays>
+			<duedate></duedate>
+			<comparativetotal></comparativetotal>
+			<deliverystate></deliverystate>
+			<deliveryaddressline1></deliveryaddressline1>
+		</header>
+		{{- for line in z.lines}}
+		<productline>
+			<productcode>{{line.item.sku}}</productcode>
+			<suppproductcode></suppproductcode>
+			<suppliersqty>{{line.orderQuantity}}</suppliersqty>
+			<supplierscancelqty></supplierscancelqty>
+			<suppliersunit></suppliersunit>
+			<suppliersprice>{{line.item.purchasePrice}}</suppliersprice>
+			<discount></discount>
+			<suppliersdiscountamt></suppliersdiscountamt>
+			<supplierstaxamount></supplierstaxamount>
+			<taxcode></taxcode>
+			<taxrate></taxrate>
+			<supplierslinetotal></supplierslinetotal>
+			<instockqty></instockqty>
+			<instockcancelqty></instockcancelqty>
+			<unit></unit>
+			<unitoncost></unitoncost>
+			<oncosts></oncosts>
+			<print></print>
+			<glset></glset>
+			<goodsintransit></goodsintransit>
+		</productline>
+		{{- end }}
+	</record>
+</xmlkfi>

@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings": {
+    "Storage": "DataSource=C:\\Users\\joshc\\Desktop\\Exo\\Zudello_EF.db"
+  }
+
+}

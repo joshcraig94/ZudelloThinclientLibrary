@@ -1,0 +1,47 @@
+﻿ "data": 
+ 
+	[
+        {
+            "uuid": "76b94fff-1215-4fcc-b68e-b721f9cd8ead",
+            "data_type": null,
+            "integration": {
+                "id": 30,
+                "uuid": "MYOB_EXO",
+                "type": "inventory",
+                "name": "MYOB_EXO"
+            },
+            "credintials": {
+                "client_key": "exolocal-0"
+            },
+			
+			"Settings" :
+
+			[			
+			
+				{
+				
+					"ZudelloSqlLite": "",
+					"ZudelloPlatform": "WEBSITE",
+					"ZudelloTeam": "87f191b4-cf6d-494d-9ff1-dc4eec461b8c",
+					"ZudelloWebsite": "https://api.zudello.com/api/",
+					"ZudelloMappingEndpoint": "https://api.zudello.com/api/thinclient/MYOB_EXO/mapping/",
+					"ZudelloInvoiceEndpoint": "thinclient/attache/data/",
+					"ZudelloQueue": "https://35uoivhghh.execute-api.ap-southeast-2.amazonaws.com/zudello/",
+					"dollarMultiplier": "100",
+					"healthCheckSync": "10000",
+					"workerServiceSync": "60000"
+					
+				}
+			
+			],	
+				
+				
+			
+            "created_at": "2019-12-19T00:00:00.000000Z",
+            "updated_at": "2019-12-19T00:00:00.000000Z",
+            "healthy_at": null,
+            "last_sync_at": null
+        }
+		
+		
+	]

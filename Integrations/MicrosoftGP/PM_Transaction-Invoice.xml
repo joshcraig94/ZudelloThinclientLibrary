@@ -1,0 +1,82 @@
+<!-- PO Transaction Standard 2 Line Items -->
+<eConnect xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <POPTransactionType>
+    <taPoLine_Items>
+      <taPoLine>
+        <POTYPE>1</POTYPE>
+        <PONUMBER>PO2000R2</PONUMBER>
+        <VENDORID>ATTRACTI00001</VENDORID>
+        <LOCNCODE>WAREHOUSE</LOCNCODE>
+        <VNDITNUM>PHON-53RD</VNDITNUM>
+        <ITEMNMBR>PHON-ATT-53RD</ITEMNMBR>
+        <QUANTITY>2</QUANTITY>
+        <QTYCANCE>0</QTYCANCE>
+        <FREEONBOARD>1</FREEONBOARD>
+        <REQSTDBY>Jimmy Jackson</REQSTDBY>
+        <COMMNTID>TEST</COMMNTID>
+        <COMMENT_1>com 1</COMMENT_1>
+        <COMMENT_2>com 2</COMMENT_2>
+        <COMMENT_3>com 3</COMMENT_3>
+        <COMMENT_4>com 4</COMMENT_4>
+        <REQDATE>2007-04-01</REQDATE>
+        <RELEASEBYDATE>2007-03-15</RELEASEBYDATE>
+        <PRMDATE>2007-04-01</PRMDATE>
+        <PRMSHPDTE>2007-03-15</PRMSHPDTE>
+        <NONINVEN>0</NONINVEN>
+        <ITEMDESC><![CDATA[Cordless-AT&T 53RD]]></ITEMDESC>
+        <UNITCOST>91.59</UNITCOST>
+        <VNDITDSC>Phone ATT Red</VNDITDSC>
+        <UOFM>Each</UOFM>
+      </taPoLine>
+      <taPoLine>
+        <POTYPE>1</POTYPE>
+        <PONUMBER>PO2000R2</PONUMBER>
+        <VENDORID>ATTRACTI00001</VENDORID>
+        <LOCNCODE>WAREHOUSE</LOCNCODE>
+        <VNDITNUM>Cord-12</VNDITNUM>
+        <ITEMNMBR>ACCS-CRD-12WH</ITEMNMBR>
+        <QUANTITY>6</QUANTITY>
+        <QTYCANCE>0</QTYCANCE>
+        <FREEONBOARD>1</FREEONBOARD>
+        <REQSTDBY>Jan Smith</REQSTDBY>
+        <COMMNTID>TEST</COMMNTID>
+        <COMMENT_1>com 1</COMMENT_1>
+        <COMMENT_2>com 2</COMMENT_2>
+        <COMMENT_3>com 3</COMMENT_3>
+        <COMMENT_4>com 4</COMMENT_4>
+        <REQDATE>2007-04-01</REQDATE>
+        <RELEASEBYDATE>2007-03-15</RELEASEBYDATE>
+        <PRMDATE>2007-04-01</PRMDATE>
+        <PRMSHPDTE>2007-03-15</PRMSHPDTE>
+        <NONINVEN>0</NONINVEN>
+        <ITEMDESC>Phone Cord - 12inch White</ITEMDESC>
+        <UNITCOST>3.29</UNITCOST>
+        <VNDITDSC>Phone Cord - 12inch White</VNDITDSC>
+        <UOFM>Each</UOFM>
+      </taPoLine>
+    </taPoLine_Items>
+    <taPoHdr>
+      <POTYPE>1</POTYPE>
+      <PONUMBER>PO2000R2</PONUMBER>
+      <VENDORID>ATTRACTI00001</VENDORID>
+      <VENDNAME>Attractive Telephone Co.</VENDNAME>
+      <DOCDATE>2007-02-20</DOCDATE>
+      <BUYERID>LESSONUSER1</BUYERID>
+      <ALLOWSOCMTS>1</ALLOWSOCMTS>
+      <TRDISAMT>15.00</TRDISAMT>
+      <FRTAMNT>5.00</FRTAMNT>
+      <MSCCHAMT>3.00</MSCCHAMT>
+      <TAXAMNT>0.00</TAXAMNT>
+      <SUBTOTAL>202.92</SUBTOTAL>
+      <DSCPCTAM>0</DSCPCTAM>
+      <DSCDLRAM>0</DSCDLRAM>
+      <DISAMTAV>0</DISAMTAV>
+      <TXRGNNUM>tax</TXRGNNUM>
+      <COMMNTID>TEST</COMMNTID>
+      <COMMENT_1>comment 1</COMMENT_1>
+      <COMMENT_2>comment 2</COMMENT_2>
+      <COMMENT_3>comment 3</COMMENT_3>
+      <COMMENT_4>comment 4</COMMENT_4>
+    </taPoHdr>
+  </POPTransactionType>
+</eConnect>

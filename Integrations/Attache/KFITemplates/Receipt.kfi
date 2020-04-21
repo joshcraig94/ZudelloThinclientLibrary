@@ -1,0 +1,52 @@
+<KFI_version=1.0><Object_ID=832><Speed=100><CloseOnSuccess>
+
+KEVINS,GR25574,,,,,,,,,,,,,,,,,,DelDkt33344,ImportedFromZudello,250119,230119,,,,,,,,,,USD,0.68,<F2><UP><UP><UP><UP><UP><DOWN><DOWN><DOWN><DOWN>,547
+
+<F8><F9>
+
+BRI,BLURAY,,2,
+
+BRI,CD,,7,
+
+<ESC><F9>
+
+
+
+  <KFI_version=1.0="">
+    <Object_ID=832="">
+      <Speed=10="">
+
+
+Example of how to manually iterate through and select multiple  PO's and Zero out the lines and delete Zeros
+
+<KFI_version=1.0="">
+        <Object_ID=832="">
+          <Speed=10="">
+
+            MOTOPART,87SSL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,<F7>
+              <DOWN>
+                <F7>
+                  <DOWN>
+                    <F7>
+                      <DOWN>
+                        <DOWN>
+                          <F9>
+
+
+                            <UP>
+                              <UP>
+                                <UP>
+
+                                  ,,,0<F9>
+                                    ,,,5<F9>
+                                      <F6>
+                                        <ESC>
+                                          <F9>
+                                            
+                                            
+                                            
+           <KFI_version=1.0><Object_ID=832><Speed=100><CloseOnSuccess>
+{{normalize_length z.supplier.name Max:8 }},
+GR{{z.invoiceNumber}},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,{{order_select z}}
+
+<F2><UP><UP><UP><UP><UP><DOWN><DOWN><DOWN><DOWN>,{{z.purchaseOrderNumber}}<F8><F9>{{- for line in z.lines}}Loc,{{line.item.sku}},Decription,{{line.orderQuantity}},{{- end }}<ESC><F9>

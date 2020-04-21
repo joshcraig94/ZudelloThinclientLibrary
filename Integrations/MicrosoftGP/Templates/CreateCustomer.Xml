@@ -1,0 +1,24 @@
+﻿<eConnect xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <RMCustomerMasterType>
+    <eConnectProcessInfo>
+    </eConnectProcessInfo>
+    <taUpdateCreateCustomerRcd>
+      <CUSTNMBR>JEFF0002</CUSTNMBR>
+      <CUSTNAME>JL Lawn Care Service</CUSTNAME>
+      <STMTNAME>JL Lawn Care Service</STMTNAME>
+      <SHRTNAME>JL Lawn Care</SHRTNAME>
+      <ADRSCODE>PRIMARY</ADRSCODE>
+      <ADDRESS1>123 Main Street</ADDRESS1>
+      <CITY>Valley City</CITY>
+      <STATE>ND</STATE>
+      <ZIPCODE>58072</ZIPCODE>
+      <COUNTRY>USA</COUNTRY>
+      <PHNUMBR1>55532336790000</PHNUMBR1>
+      <PHNUMBR2>55551161817181</PHNUMBR2>
+      <FAX>55584881000000</FAX>
+      <KPCALHST>0</KPCALHST>     
+      <UseCustomerClass>0</UseCustomerClass>
+      <UpdateIfExists>1</UpdateIfExists>
+    </taUpdateCreateCustomerRcd>
+  </RMCustomerMasterType>
+</eConnect>
