@@ -1,0 +1,10 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ZudelloThinclientLibrary.CoreLibary.Integrations.Attache.Mappings.Create
+{
+    class CREATE_INVENTORY_MASTER
+    {
+    }
+}

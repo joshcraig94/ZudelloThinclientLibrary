@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CoreLibary\" />
-    <Folder Include="Integrations\MicrosoftGP\" />
-    <Folder Include="Integrations\MyobExo\" />
+    <Folder Include="CoreLibary\Integrations\Attache\Mappings\Special\" />
+    <Folder Include="CoreLibary\Integrations\MicrosoftGP\Mappings\CreateInventoryMaster\" />
+    <Folder Include="CoreLibary\Integrations\MyobExo\Mappings\CreateInventoryMaster\" />
   </ItemGroup>
 
   <ItemGroup>

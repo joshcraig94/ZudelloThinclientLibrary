@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xmlkfi object_id="565">
+    <record>
+        <code>{{z.code }}</code>
+        <name>{{z.name}}</name>
+        <inactive></inactive>
+        <dsput></dsput>
+        <propname></propname>
+        <addr1>{{z.address}}</addr1>
+        <addr2>{{z.address2}}</addr2>
+        <state>{{z.province}}</state>
+        <pstcd>{{z.postal_code}}</pstcd>
+        <country></country>
+        <phone></phone>
+        <faxno></faxno>
+        <cntct></cntct>
+        <emailaddr>{{z.email}}</emailaddr>
+        <website></website>
+        <comnt></comnt>
+        <taxnumb1></taxnumb1>
+        <subnumb1></subnumb1>
+        <gln></gln>
+        <dpid></dpid>
+        <bsp></bsp>
+        <sortd></sortd>
+        <ctgry></ctgry>
+    </record>
+</xmlkfi>

@@ -1,0 +1,1 @@
+﻿<KFI_version=1.0><Object_ID=832><Speed=100><CloseOnSuccess>{{normalize_length z.supplier.name Max:8 }},GR{{z.invoiceNumber}},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,<F2><UP><UP><UP><UP><UP><DOWN><DOWN><DOWN><DOWN>,{{z.purchaseOrderNumber}}<F8><F9>{{- for line in z.lines}}Loc,{{line.item.sku}},Decription,{{line.orderQuantity}},{{- end }}<ESC><F9>
